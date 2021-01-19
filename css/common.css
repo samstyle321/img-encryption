@@ -1,0 +1,106 @@
+ h2 {
+    text-align: center;
+    font-style: oblique;
+    font-family: cursive;
+    color: #24d433cc
+    }
+
+    hr {
+    color: rgb(255, 255, 255);
+    direction: ltr;
+    }
+
+    body {
+    background: url('../img/2.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+                
+    }
+    .contain{
+    width: 100%;
+    padding-left: 2%;
+
+    }
+    .contain div{
+    margin: 1%;
+    padding: 2%;
+    display: inline-block;
+    }
+    #Snd {
+    color: white;
+    font-weight: bold;
+    }
+
+    b {
+    color: white;
+
+    }
+
+    label {
+    color: white;
+    text-align: left;
+    margin-right: 10%;
+    }
+
+    #pass {
+    ]margin-left: 10%;
+    }
+
+    #set {
+    margin-left: 5%;
+    margin-top: -1%;
+    }
+
+    #encrypt {
+    margin-top: -7%;
+    }
+
+    #code {
+    margin-top: 5%;
+    margin-left: 7%;
+    }
+
+    #fileToUpload {
+    color: white;
+    }
+    h5,h6{
+    color:rgb(23, 235, 41);
+    }
+    #myProgress {
+  width: 80%;
+  height: 3px;
+  background-color: #fff;
+    }
+
+    #encrypting {
+    width: 0%;
+    height: auto;
+    background-color: #17a2b8;
+    text-align: center;
+    padding-top: 2%;
+    font-weight: 600;
+  
+    }
+    #decrypting{
+    width: 0%;
+    height: auto;
+    background-color: #28a745;
+    text-align: center;
+    padding-top: 2%;
+    font-weight: 600;
+
+    }
+        @media screen and (max-width: 576px){
+            .contain div{
+                display: block;
+                padding: 0;
+
+            }
+        }
+         @media screen and (max-width: 576px){
+            .contain{
+               padding-left: 0;
+            }
+        }

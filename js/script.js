@@ -9,8 +9,6 @@ $(document).ready(function() {
 		var file = {};
 		var pass;
 		var passwd;
-		var bar = document.getElementById('encrypting');
-
 
 		
 			
@@ -96,10 +94,6 @@ $(document).ready(function() {
 		
 					case 'progress' :
 						$('#encrypting').css("width",event.data.value + "%");
-						bar.innerHTML = event.data.value * 1 + "%";
-
-						
-
 						break;
 			
 					case 'encrypting' :
@@ -116,6 +110,39 @@ $(document).ready(function() {
 				}
 			}
 		}
+	
+	
+	/*	$('#decrypt').click(function(e) {
+			var encryptedText = $('#decrypt-text').val();
+			var dWorker       = new Worker('decrypt.js');
+			dWorker.postMessage({command:'image',value:encryptedText,chunk:chunkSize,passwd});
+			watch.start();
+						
+			dWorker.onmessage = function(event) {
+				switch(event.data.command) {
+					case 'log' :
+						console.log('Worker Log : ' + event.data.value);
+						break;
+				
+					case 'progress' :
+						$('#decrypting').css("width",event.data.value + "%");
+						break;
+						
+						
+					case 'decrypting' :
+						
+						
+						var image = new Image();
+						image.src = event.data.code;
+						$(image).insertAfter('#imgLabel');
+						watch.stop();
+						$('#Time').html(watch.duration());
+						dWorker.terminate();
+						break;
+						
+				}
+			}
+		}); */
 		
 	  
 		function StopWatch(){

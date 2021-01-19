@@ -9,7 +9,6 @@ $(document).ready(function() {
 		var file = {};
 		var pass;
 		var passwd;
-		var bar = document.getElementById('decrypting');
 
 		
 			
@@ -38,7 +37,6 @@ $(document).ready(function() {
 				
 					case 'progress' :
 						$('#decrypting').css("width",event.data.value + "%");
-						bar.innerHTML = event.data.value * 1 + "%";
 						break;
 						
 						

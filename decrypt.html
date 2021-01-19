@@ -1,46 +1,50 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Decryption</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="http://fonts.googleapis.com/css?family=Kotta+One|Cantarell:400,700" rel="stylesheet" type="text/css">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script type="text/javascript" src="js/jsaes.js" ></script>
-    <script type="text/javascript" src="js/jquery-1.7.2.min.js" ></script>
-    <script type="text/javascript" src="js/de-script.js" ></script>
-    
-</head>
-<body>
-	<div class="row">
-	  
 
-      <div class="offset1 span8 well col-md-4 col-sm-10">
-      
-      <!-- <div class="offset1 span8 well col-md-3 col-sm-10">-->
-    	<h5>Decrypt Image</h5>
-    	<textarea id="decrypt-text"></textarea><br /><br />
-      <label>Password :</label>
-      <input type="password" id="passwd"  size="20" value=""> <br /><br />
-      <input type="button" id="enter" value="Enter" class="btn btn-primary span4" /> <br /><br />
-    	<input type="button" id="decrypt" value="Decrypt" class="btn btn-success span4" /> <br /><br />
-    	
-    	<h6>Decrypting</h6>
-		<div id="myProgress" class="progress progress-success progress-striped active">
-  			<div id="decrypting" class="bar" ></div>
-		</div>
-    	
-       </div>
-       	
-       <div class="span3 well col-md-4 col-sm-10">
-      	<h5 id="imgLabel">Image</h5>
-      </div>	
-      
-      
-       	
-    </div> 
-    
-   
-  
+<head>
+  <title>Decryption</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/common.css">
+  <script type="text/javascript" src="js/jsaes.js"></script>
+  <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+  <script type="text/javascript" src="js/de-script.js"></script>
+</head>
+
+  <body>
+    <hr>
+    <hr>
+    <button type="button" class="btn btn-success"><a href="index.html" style="color: white;">Back@Home</a></button>
+    <h2>Decryption***</h2>
+    <hr>
+    <hr>
+    <div class="contain">
+      <div class="col-lg-6 col-md-6 col-sm-12 clearfix border ">
+        <hr>
+        <hr>
+        <label for="fileToUpload"><b>Enter Encrypted File ::</b></span></label>
+        <textarea id="decrypt-text"></textarea> <br /><br />
+        <label><b>Enter Password to Decrypt ::</b></label>
+        <input type="text" id="passwd" size="20" value="">
+        <input type="button" id="enter" value="Enter" class="btn btn-success span4" />
+        <hr>
+        <hr>
+        <input type="button" id="decrypt" value=" Click Here To Decrypt" class="btn btn-success span4" />
+        <!-- <h6>Decrypting</h6>
+        <div id="myProgress" class="progress progress-success progress-striped active">
+          <div id="decrypting" class="bar" ></div>
+        </div> -->
+
+      </div>
+      <div class="col-lg-5 col-md-5 col-sm-12  dec-img " id="Snd">
+          <h5 id="imgLabel">Decrypted Image :: </h5><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        
+      </div>
+
+    </div>
+  </body>
+
 </body>
+
 </html>

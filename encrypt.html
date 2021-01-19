@@ -1,46 +1,62 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Encryption</title>
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="http://fonts.googleapis.com/css?family=Kotta+One|Cantarell:400,700" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script type="text/javascript" src="js/jsaes.js" ></script>
-    <script type="text/javascript" src="js/jquery-1.7.2.min.js" ></script>
-    <script type="text/javascript" src="js/script.js" ></script>
-    
-</head>
-<body>
-  
-	<div class="row">
-	  
+<html lang="en">
 
-      <div class="offset1 span8 well col-md-4 col-sm-10">
-        <div class="offset1 span10"><h2>Encryption</h2></div> 
-      	<label for="fileToUpload">Select a File to Upload</label><br />
-      	<input type="file" name="fileToUpload" id="fileToUpload" class="span4"/> <br /><br />
-        <label>Password :</label>
-        <input type="password" id="pass"  size="20" value=""> <br /><br />
-        <input type="button" id="set" value="Set" class="btn btn-primary span4" /> <br /><br />
-        <input type="button" id="encrypt" value="Encrypt" class="btn btn-primary span4" /> <br /><br />
-     	  <textarea id="code" class="span4" ></textarea><br /><br />
-     	
-		    <h6>Encryption</h6>
-		    <div id="myProgress" class="progress progress-success progress-striped active">
-  			 <div id="encrypting" class="bar" ></div>
-		    </div>
-     	
-      </div>
-      
-      <div class="span3 well col-md-4 col-sm-10">
-      	<h5>File Information</h5>
-      	<div id="fileName"></div>
-      	<div id="fileSize"></div>
-      	<div id="fileType"></div> <br /><br /><br />
-      	<h6>Time Taken : </h6><div id="Time"></div>
-      </div>
-  </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css.map">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <script type="text/javascript" src="js/jsaes.js"></script>
+    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+
+    <title>Encrypt</title>
+</head>
+
+<body>
+    <hr>
+    <hr>
+    <button type="button" class="btn btn-success"><a href="index.html" style="color: white;">Back@Home</a></button> 
+    <h2>Encryption***</h2>
+    <hr>
+    <hr>
+    <div class="contain">
+        <div class="col-lg-6 col-md-6 col-sm-12 clearfix border ">
+            <hr>
+            <hr>
+            <label for="fileToUpload"><b>Select a File to Upload ::</b></span></label>
+            <input type="file" name="fileToUpload" id="fileToUpload" /> <br /><br />
+            <label><b>Password ::</b></label>
+            <input type="text" id="pass" size="20" value="" placeholder="Enter your Key">
+            <input type="button" id="set" value="Set" class="btn btn-success span4" />
+            <hr>
+            <hr>
+            <input type="button" id="encrypt" value="Click Here to Encrypt" class="btn btn-success span4" />
+            <textarea id="code" class="span4"></textarea>
+            <!-- <h6>Encrypting</h6>
+            <div id="myProgress" class="progress progress-success progress-striped active">
+             <div id="encrypting" class="bar" ></div>
+            </div> -->
+
+        </div>
+        <div class="col-lg-5 col-md-5 col-sm-12   border" id="Snd">
+            <hr>
+            <hr>
+            <h5>File Information</h5>
+            <div id="fileName"></div>
+            <div id="fileSize"></div>
+            <div id="fileType"></div> <br /><br />
+            <br />
+            
+            <h6>Time Taken : </h6>
+            <div id="Time"></div>
+            <br />
+            
+            <hr>
+            <hr>
+        </div>
+    </div>
 </body>
+
 </html>
